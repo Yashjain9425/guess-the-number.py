@@ -1,0 +1,25 @@
+#guess the number
+number =19
+guess_the_number =1
+print ("    you have only 5 chances to guess the number")
+print("                 All the best ")
+while(guess_the_number<=5):
+	num=int(input("\nEnter you number:"))
+	if (num<19):
+		print("    \n     increase your  number")
+		print("           try again!!")
+		print("\n      your's chance left ", 5-guess_the_number )
+		
+	elif (num>19):
+		print("  \n       decrease your number")
+		print("           try again!!")
+		print("\n      your's chance left " ,  5-guess_the_number)
+	else:
+		print("     congratulation you guess the write number")
+		print(guess_the_number, "number of guess to finish.")
+		print( 5-guess_the_number,"numbers of guess left")
+		break
+	guess_the_number =guess_the_number +1
+if (guess_the_number>5):
+   print ("    \n    print( 9-guess_the_number,"numbers of guess left")
+	guess_the_number =guess_the_number +1      game over")
